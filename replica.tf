@@ -283,6 +283,8 @@ resource "aws_s3_bucket_replication_configuration" "state" {
     id     = "replica_configuration"
     status = "Enabled"
 
+    filter {}
+
     delete_marker_replication {
       status = "Disabled"
     }
